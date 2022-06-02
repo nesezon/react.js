@@ -34,8 +34,6 @@
 * **App.js** почистим, чтобы он стал выглядеть так:
 
 ```jsx
-import * as React from 'react';
-
 function App() {
   return (
     <div className="App" />
@@ -45,12 +43,11 @@ function App() {
 export default App;
 ```
 
-`<div className="App"></div>` - компонент<br>`import * as React from 'react';` - подключаем react. Это нужно делать во всех файлах где используются компоненты.
+`<div className="App" />` - компонент
 
 * **index.js** почистим чтобы выглядел так:
 
 ```jsx
-import * as React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 import App from './App';
 
